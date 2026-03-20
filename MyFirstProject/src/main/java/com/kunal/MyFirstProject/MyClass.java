@@ -1,0 +1,14 @@
+package com.kunal.MyFirstProject;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MyClass {
+
+    @GetMapping("/")
+    public String sayHello(){
+        String s = "Hello World, I'm Kunal Chachane";
+    return s;
+    }
+}
